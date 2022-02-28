@@ -1,7 +1,17 @@
-import '../styles/globals.scss'
+import { ThemeProvider } from 'styled-components'
+import { RecoilRoot } from 'recoil'
+import GlobalStyle from '../styles/global'
+import theme from '../styles/theme'
 import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }: AppProps) {
+  return (
+    <ThemeProvider theme={theme}>
+      <RecoilRoot>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </RecoilRoot>
+    </ThemeProvider>
+  )
 }
-export default MyApp
+export default App
