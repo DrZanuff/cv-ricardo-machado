@@ -7,7 +7,7 @@ export const Container = styled.div`
   background: #010101;
   color: ${({ theme }) => theme.colors.TEXT};
 `
-export const Menu = styled.div`
+export const Menu = styled.aside`
   position: fixed;
   left: 0;
   height: 100vh;

@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import theme from '../../../styles/theme'
 
 const rotation = keyframes`
     from {
@@ -17,9 +18,8 @@ const backRotation = keyframes`
 				-webkit-transform: rotate(0deg);
 		}
 `
-
 export const SideBarContainer = styled.div`
-  width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -70,4 +70,71 @@ export const SmallCircle = styled.div`
   width: 6px;
   height: 6px;
   border-radius: 50%;
+`
+export const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: ${({ theme }) => theme.colors.TITLE};
+  }
+
+  span {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: ${({ theme }) => theme.colors.GREEN};
+  }
+`
+export const NavMenu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 40px;
+  width: 100%;
+
+  > button:last-child {
+    margin-top: 60px;
+  }
+`
+
+interface NavItemProps {
+  active: boolean
+}
+
+export const NavItem = styled.button<NavItemProps>`
+  outline: none;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  transition: color 0.2s ease-in-out, padding-left 0.2s ease-in-out;
+
+  &:hover {
+    color: ${({ active }) =>
+      active === true ? theme.colors.GREEN : theme.colors.TEXT};
+    padding-left: 15px;
+  }
+
+  color: ${({ active }) =>
+    active === true ? theme.colors.GREEN : theme.colors.TITLE};
 `
