@@ -1,4 +1,5 @@
 import { SideBarMenu } from '../src/components/SideBarMenu'
+import { Sections } from '../src/components/Sections'
 import * as S from '../styles/home'
 
 export default function Home() {
@@ -8,8 +9,7 @@ export default function Home() {
         <SideBarMenu />
       </S.Menu>
       <S.Content>
-        <h1>Hello</h1>
-        <p>Tudo bem pessoa??</p>
+        <Sections />
       </S.Content>
     </S.Container>
   )
