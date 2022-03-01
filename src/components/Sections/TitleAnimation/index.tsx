@@ -1,4 +1,4 @@
-import Rive from 'rive-react'
+import { Fit, Layout, useRive } from 'rive-react'
 import LoadingSpin from 'react-loading-spin'
 import { useState, useEffect } from 'react'
 import theme from '../../../../styles/theme'
@@ -41,22 +41,30 @@ export function TitleAnimation() {
           }
           return newIndex
         }),
-      4000 // every 3 seconds
+      4000 // every 4 seconds
     )
     return () => clearTimeout(intervalId)
   }, [])
 
+  const { RiveComponent } = useRive(
+    {
+      src: '/cv_animation.riv',
+      onLoad: () => setAnimationReady(true),
+      layout: Layout.new({ fit: Fit.Cover }),
+      autoplay: true,
+    },
+    { fitCanvasToArtboardHeight: true }
+  )
+
   return (
     <S.TitleAnimationContainer>
-      <h1>
+      <h1>It's all about</h1>
+      <h2>
         <TextTransition text={Titles[textIndex]} springConfig={presets.stiff} />
-      </h1>
+      </h2>
       {animationReady === true && (
         <S.AnimationContainer opacity={animationOpacity}>
-          <Rive
-            src="/cv_animation.riv"
-            onLoad={() => setAnimationReady(true)}
-          />
+          <RiveComponent />
         </S.AnimationContainer>
       )}
       {animationReady === false && (

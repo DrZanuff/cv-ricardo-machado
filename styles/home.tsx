@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   min-height: 100vh;
   display: flex;
-  height: 100vh;
   background: #010101;
   color: ${({ theme }) => theme.colors.TEXT};
 `
@@ -33,6 +32,6 @@ export const Content = styled.div`
   background: ${({ theme }) => theme.colors.GRAY_BG};
   margin: 70px auto 134px 0;
   height: calc(100% - 70px);
-  padding-left: 410px;
+  padding-left: 350px;
   width: 95%;
 `
