@@ -47,4 +47,16 @@ export const ParagraphContainer = styled.section`
     margin-top: 0px;
     margin-bottom: 0px;
   }
+
+  a {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 180.5%;
+    /* or 27px */
+    text-align: justify;
+
+    color: ${({ theme }) => theme.colors.GREEN};
+  }
 `
