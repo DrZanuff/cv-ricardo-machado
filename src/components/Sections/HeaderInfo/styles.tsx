@@ -63,10 +63,14 @@ export const ListContainer = styled.div`
   font-family: Rubik;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 180.5%;
-  /* or 32px */
+  font-size: 14px;
+  line-height: 22px;
+
   color: ${({ theme }) => theme.colors.TEXT};
+
+  ul {
+    margin-top: 2px;
+  }
 `
 export const RightSide = styled.div`
   display: flex;
@@ -79,8 +83,8 @@ export const RightSide = styled.div`
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 180.5%;
+    font-size: 16px;
+    line-height: 22px;
     /* or 32px */
     color: ${({ theme }) => theme.colors.TITLE};
   }
@@ -88,7 +92,7 @@ export const RightSide = styled.div`
 export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 `
 export const LinkItem = styled.div`
   display: flex;
@@ -99,7 +103,7 @@ export const LinkItem = styled.div`
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    line-height: 180.5%;
+    line-height: 24px;
     /* or 25px */
     color: ${({ theme }) => theme.colors.GREEN};
   }

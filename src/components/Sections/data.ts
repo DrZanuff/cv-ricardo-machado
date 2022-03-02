@@ -161,7 +161,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
   },
   gamefication: {
     ptBR: /*html*/ `
-    <h3>Sistema de Gamificação da escola Setmind</h3>
+    <h4>Sistema de Gamificação da escola Setmind</h4>
 
     <p>
     No início da pandemia do Covid em 2019, a escola de programação que eu trabalhava

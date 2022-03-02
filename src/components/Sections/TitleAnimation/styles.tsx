@@ -19,6 +19,7 @@ export const TitleAnimationContainer = styled.section`
     color: ${({ theme }) => theme.colors.GREEN};
     text-transform: uppercase;
     font-size: 35px;
+    margin-bottom: 0px;
   }
 `
 interface AnimationContainerProps {

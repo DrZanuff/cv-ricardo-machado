@@ -28,17 +28,23 @@ export function HeaderInfo() {
         <S.LinksContainer>
           <S.LinkItem>
             <WhatsappIcon />
-            <a href="#">(61) 99220-7186</a>
+            <a href="https://wa.me/5561992207186" target="_blank">
+              (61) 99220-7186
+            </a>
           </S.LinkItem>
 
           <S.LinkItem>
             <TwitterIcon />
-            <a href="#">twitter.com/drzanuff</a>
+            <a href="https://twitter.com/drzanuff" target="_blank">
+              twitter.com/drzanuff
+            </a>
           </S.LinkItem>
 
           <S.LinkItem>
             <GmailIcon />
-            <a href="#">ricardo.machado.nwi@gmail.com</a>
+            <a href="mailto: ricardo.machado.nwi@gmail.com" target="_blank">
+              ricardo.machado.nwi@gmail.com
+            </a>
           </S.LinkItem>
         </S.LinksContainer>
       </S.RightSide>

@@ -18,7 +18,34 @@ export const ParagraphContainer = styled.section`
     text-align: justify;
 
     color: ${({ theme }) => theme.colors.TEXT};
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-top: 0px;
+    width: 100%;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 180.5%;
+    /* or 27px */
+    text-align: justify;
+
+    color: ${({ theme }) => theme.colors.TEXT};
+    /* margin-bottom: 35px; */
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
   }
 
   h3 {
@@ -30,7 +57,7 @@ export const ParagraphContainer = styled.section`
 
     color: ${({ theme }) => theme.colors.TITLE};
     margin-top: 10px;
-    margin-bottom: 52px;
+    margin-bottom: 35px;
   }
 
   h4 {
