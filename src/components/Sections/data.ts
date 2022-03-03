@@ -225,14 +225,29 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
   },
   likes: {
     ptBR: /*html*/ `
-    <h3>GOSTOS</h3>
-
-    <p>
+    <h3>
+      GOSTOS
+    </h3><p>
       <ul>
         <li>Basketball</li>
         <li>Board Games</li>
         <li>Jogar Video Games</li>
         <li>Desenvolver Video Games</li>
+      </ul>
+    </p>
+    `,
+    enUS: /*html*/ ``,
+  },
+
+  studies: {
+    ptBR: /*html*/ `
+    <h3>
+      FORMAÇÃO
+    </h3><p>
+      <ul>
+        <li>Ensino Médio completo</li>
+        <li>Seis semestres de desenvolvimento de Jogos Digitais</li>
+        <li>Ignite da Rocketseat - Trilha ReactJS <img src="/images/icons/rocket.png" alt="Foguete"> </li>
       </ul>
     </p>
     `,

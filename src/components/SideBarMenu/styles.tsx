@@ -114,7 +114,7 @@ interface NavItemProps {
   active: boolean
 }
 
-export const NavItem = styled.button<NavItemProps>`
+export const NavItem = styled.a<NavItemProps>`
   outline: none;
   border: none;
   background: none;

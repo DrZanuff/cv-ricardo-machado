@@ -15,12 +15,18 @@ export default createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: 'Rubik';
+    scroll-behavior: smooth;
   }
 
 
   a {
     color: inherit;
     text-decoration: none;
+    transition: filter 0.2s ease-in-out;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 
   * {

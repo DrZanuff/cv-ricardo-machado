@@ -5,6 +5,7 @@ export const HeaderInfoContainer = styled.section`
   width: 100%;
   margin-left: 50px;
   align-items: center;
+  margin-bottom: 30px;
 `
 
 export const LeftSide = styled.div`

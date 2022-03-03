@@ -26,6 +26,7 @@ export function SideBarMenu() {
         {menuItems.map((item, index) => (
           <S.NavItem
             key={index}
+            href={item.href}
             active={index === currentItemMenu}
             onClick={() => {
               setCurrentItemMenu(index)

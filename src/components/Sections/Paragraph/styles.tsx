@@ -6,6 +6,7 @@ export const ParagraphContainer = styled.section`
   width: 100%;
   margin-left: 50px;
   max-width: 800px;
+  margin-top: 0px;
 
   p {
     width: 100%;
@@ -19,14 +20,28 @@ export const ParagraphContainer = styled.section`
 
     color: ${({ theme }) => theme.colors.TEXT};
     /* margin-bottom: 35px; */
+    margin-top: 0px;
 
     &:last-child {
       margin-bottom: 50px;
+    }
+
+    &:blank {
+      display: none;
     }
   }
 
   li:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  li {
+    position: relative;
+    img {
+      position: absolute;
+      top: -8px;
+      margin-left: 6px;
+    }
   }
 
   ul {
@@ -57,7 +72,7 @@ export const ParagraphContainer = styled.section`
 
     color: ${({ theme }) => theme.colors.TITLE};
     margin-top: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   h4 {
@@ -71,7 +86,7 @@ export const ParagraphContainer = styled.section`
     text-align: justify;
 
     color: ${({ theme }) => theme.colors.TITLE};
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 0px;
   }
 
