@@ -3,9 +3,16 @@ import styled from 'styled-components'
 export const HeaderInfoContainer = styled.section`
   display: flex;
   width: 100%;
+  max-width: 800px;
   margin-left: 50px;
   align-items: center;
   margin-bottom: 30px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin-left: 0px;
+    padding: ${({ theme }) => theme.mobile.padding};
+  }
 `
 
 export const LeftSide = styled.div`
@@ -15,6 +22,7 @@ export const LeftSide = styled.div`
   gap: 15px;
   min-height: 290px;
   justify-content: center;
+  flex: 2;
 
   h3 {
     font-family: Rubik;
@@ -49,6 +57,12 @@ export const LeftSide = styled.div`
 
     color: ${({ theme }) => theme.colors.TEXT};
   }
+
+  @media (max-width: 1024px) {
+    h3 {
+      font-size: 25px;
+    }
+  }
 `
 export const Separator = styled.span`
   opacity: 0.5;
@@ -59,6 +73,10 @@ export const Separator = styled.span`
   margin-left: 29px;
   margin-right: 32px;
   background-color: ${({ theme }) => theme.colors.TITLE};
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `
 export const ListContainer = styled.div`
   font-family: Rubik;
@@ -77,6 +95,7 @@ export const RightSide = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
+  flex: 1.2;
 
   h4 {
     margin-top: 0px;

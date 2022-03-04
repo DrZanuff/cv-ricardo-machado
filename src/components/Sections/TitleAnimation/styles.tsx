@@ -13,6 +13,10 @@ export const TitleAnimationContainer = styled.section`
     text-transform: uppercase;
     font-size: 55px;
     margin-bottom: 0px;
+
+    @media (max-width: 1024px) {
+      font-size: 30px;
+    }
   }
 
   h2 {
@@ -20,6 +24,10 @@ export const TitleAnimationContainer = styled.section`
     text-transform: uppercase;
     font-size: 35px;
     margin-bottom: 0px;
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
   }
 `
 interface AnimationContainerProps {
@@ -38,6 +46,10 @@ export const AnimationContainer = styled.div<AnimationContainerProps>`
   canvas {
     height: 100%;
     min-height: 518px;
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
   }
 `
 export const SpinnerContainer = styled.div`

@@ -77,6 +77,10 @@ export const skills: Skills[] = [
     image: '/images/icons/blender.png',
   },
   {
+    name: 'NodeJS',
+    image: '/images/icons/node.png',
+  },
+  {
     name: 'Firebase',
     image: '/images/icons/firebase.png',
   },

@@ -27,6 +27,12 @@ export const SideBarContainer = styled.div`
   margin-top: 24px;
   margin-left: 44px;
   margin-right: 29px;
+
+  @media (max-width: 1024px) {
+    flex-direction: row;
+    gap: 15px;
+    margin: 15px 10px 0px;
+  }
 `
 export const Badge = styled.div`
   width: 103px;
@@ -38,6 +44,11 @@ export const Badge = styled.div`
   align-items: center;
   border: 2px solid ${({ theme }) => theme.colors.GREEN};
   position: relative;
+
+  @media (max-width: 1024px) {
+    width: 90px;
+    height: 90px;
+  }
 `
 export const Dot = styled.div`
   position: absolute;
@@ -62,6 +73,10 @@ export const Circle = styled.div`
   width: 8px;
   height: 8px;
   border-radius: 50%;
+
+  @media (max-width: 1024px) {
+    top: -42px;
+  }
 `
 export const SmallCircle = styled.div`
   position: relative;
@@ -70,6 +85,10 @@ export const SmallCircle = styled.div`
   width: 6px;
   height: 6px;
   border-radius: 50%;
+
+  @media (max-width: 1024px) {
+    top: -42px;
+  }
 `
 export const Title = styled.div`
   display: flex;
@@ -97,6 +116,12 @@ export const Title = styled.div`
 
     color: ${({ theme }) => theme.colors.GREEN};
   }
+
+  @media (max-width: 1024px) {
+    h1 {
+      margin: 5px 0;
+    }
+  }
 `
 export const NavMenu = styled.nav`
   display: flex;
@@ -107,6 +132,10 @@ export const NavMenu = styled.nav`
 
   > button:last-child {
     margin-top: 60px;
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
   }
 `
 

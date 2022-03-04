@@ -12,12 +12,13 @@ export const Menu = styled.aside`
   height: 100vh;
   background: ${({ theme }) => theme.colors.GRAY_MENU};
   width: 315px;
+  z-index: 2;
 
   box-shadow: 1.5px 0 5px rgba(0, 0, 0, 0.219), 10px 0 6px rgba(0, 0, 0, 0.144),
     14px 0 11px rgba(0, 0, 0, 0.103), 22px 0 30px rgba(0, 0, 0, 0.26),
     35px 0 65px rgba(0, 0, 0, 0.007);
 
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     position: fixed;
     top: 0;
     height: 125px;
@@ -34,4 +35,11 @@ export const Content = styled.div`
   height: calc(100% - 70px);
   padding-left: 350px;
   width: 95%;
+
+  @media (max-width: 1024px) {
+    margin: 0;
+    padding-left: 0;
+    padding-top: 120px;
+    width: 100%;
+  }
 `

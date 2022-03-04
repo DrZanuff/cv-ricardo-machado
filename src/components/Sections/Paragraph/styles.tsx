@@ -8,6 +8,11 @@ export const ParagraphContainer = styled.section`
   max-width: 800px;
   margin-top: 0px;
 
+  @media (max-width: 1024px) {
+    margin-left: 0px;
+    padding: ${({ theme }) => theme.mobile.padding};
+  }
+
   p {
     width: 100%;
     font-family: Rubik;
@@ -100,5 +105,15 @@ export const ParagraphContainer = styled.section`
     text-align: justify;
 
     color: ${({ theme }) => theme.colors.GREEN};
+  }
+
+  @media (max-width: 1024px) {
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      text-align: justify;
+    }
   }
 `

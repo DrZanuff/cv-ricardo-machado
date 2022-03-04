@@ -148,7 +148,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     </p>
 
     <p>
-    Noticias sobre o jogo: 
+    Noticias sobre o jogo:<br>
     
     <a
     href="www.conass.org.br/aplicativo-vai-orientar-criancas-a-prevenir-queimaduras/"
@@ -195,7 +195,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     </p>
 
     <p>
-    Svelte:
+    Svelte:<br>
       <a
       href="github.com/DrZanuff/RankedElo-Setmind-Svelte"
       target="_blank">
@@ -204,7 +204,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     </p>
 
     <p>
-    React:
+    React:<br>
       <a
       href="github.com/DrZanuff/RankedElo-Setmind-React"
       target="_blank">
@@ -213,7 +213,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     </p>
 
     <p>
-    Link da Aplicação:
+    Link da Aplicação:<br>
       <a
       href="rankedelo-setmind.netlify.app/"
       target="_blank">

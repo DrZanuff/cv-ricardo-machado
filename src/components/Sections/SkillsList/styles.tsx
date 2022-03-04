@@ -8,6 +8,11 @@ export const SkillsListContainer = styled.section`
   max-width: 800px;
   margin-bottom: 40px;
 
+  @media (max-width: 1024px) {
+    margin-left: 0px;
+    padding: ${({ theme }) => theme.mobile.padding};
+  }
+
   h3 {
     font-family: Rubik;
     font-style: normal;
@@ -17,6 +22,12 @@ export const SkillsListContainer = styled.section`
     margin: 10px 0px;
 
     color: ${({ theme }) => theme.colors.TITLE};
+  }
+
+  @media (max-width: 1024px) {
+    h3 {
+      font-size: 25px;
+    }
   }
 `
 

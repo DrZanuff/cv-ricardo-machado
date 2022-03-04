@@ -6,6 +6,9 @@ const theme = {
     TITLE: '#FFFFFF',
     TEXT: '#939393',
   },
+  mobile: {
+    padding: '0 20px',
+  },
 }
 
 export default theme
