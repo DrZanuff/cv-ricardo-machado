@@ -10,6 +10,26 @@ export default createGlobalStyle`
   src: local('Rubik'), url(/fonts/Rubik/Rubik-Regular.ttf) format('ttf');
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00C080;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00C080;
+}
+
   html,
   body {
     padding: 0;

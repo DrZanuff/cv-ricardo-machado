@@ -52,6 +52,25 @@ export const AnimationContainer = styled.div<AnimationContainerProps>`
     display: none;
   }
 `
+
+export const AnimationContainerMobile = styled.div<AnimationContainerProps>`
+  opacity: ${({ opacity }) => opacity};
+  transition-delay: 2s;
+  transition: opacity 2s ease-in-out;
+  display: none;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+
+  canvas {
+    height: 100%;
+    min-height: 300px;
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+  }
+`
 export const SpinnerContainer = styled.div`
   display: flex;
   width: 100%;

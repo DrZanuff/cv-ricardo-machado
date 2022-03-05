@@ -28,12 +28,43 @@ export const SideBarContainer = styled.div`
   margin-left: 44px;
   margin-right: 29px;
 
+  #animate-div-wrapper {
+    &::before {
+      content: '';
+      height: 20px;
+      width: 100%;
+      background: ${({ theme }) => theme.colors.GRAY_MENU};
+      margin-top: -13px;
+    }
+    background: ${({ theme }) => theme.colors.GRAY_MENU};
+    box-shadow: 0 1.5px 5px rgba(0, 0, 0, 0.219),
+      0 10px 6px rgba(0, 0, 0, 0.144), 0 14px 11px rgba(0, 0, 0, 0.103),
+      0 22px 30px rgba(0, 0, 0, 0.26), 0 35px 65px rgba(0, 0, 0, 0.007);
+  }
+
+  #animate-div {
+    flex-direction: column;
+  }
+
   @media (max-width: 1024px) {
     flex-direction: row;
     gap: 15px;
     margin: 15px 10px 0px;
+    flex-direction: column;
   }
 `
+export const InfoContainer = styled.div`
+  display: flex;
+  /* gap: 15px; */
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 1024px) {
+    flex-direction: row;
+    gap: 15px;
+  }
+`
+
 export const Badge = styled.div`
   width: 103px;
   height: 103px;
@@ -118,6 +149,7 @@ export const Title = styled.div`
   }
 
   @media (max-width: 1024px) {
+    align-items: flex-start;
     h1 {
       margin: 5px 0;
     }
@@ -137,6 +169,24 @@ export const NavMenu = styled.nav`
   @media (max-width: 1024px) {
     display: none;
   }
+`
+export const NaveMenuMobile = styled.nav`
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin-top: 7px;
+
+  > button:last-child {
+    margin-top: 60px;
+  }
+
+  /* @media (max-width: 1024px) {
+    display: flex;
+  } */
 `
 
 interface NavItemProps {
@@ -158,6 +208,11 @@ export const NavItem = styled.a<NavItemProps>`
 
   transition: color 0.2s ease-in-out, padding-left 0.2s ease-in-out;
 
+  @media (max-width: 1024px) {
+    font-size: 19px;
+    line-height: 22px;
+  }
+
   &:hover {
     color: ${({ active }) =>
       active === true ? theme.colors.GREEN : theme.colors.TEXT};
@@ -166,4 +221,13 @@ export const NavItem = styled.a<NavItemProps>`
 
   color: ${({ active }) =>
     active === true ? theme.colors.GREEN : theme.colors.TITLE};
+`
+export const IconContainer = styled.div`
+  display: none;
+  width: 100%;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    display: flex;
+  }
 `

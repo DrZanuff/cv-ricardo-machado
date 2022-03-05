@@ -21,7 +21,7 @@ export const Menu = styled.aside`
   @media (max-width: 1024px) {
     position: fixed;
     top: 0;
-    height: 125px;
+    height: 170px;
     width: 100vw;
 
     box-shadow: 0 1.5px 5px rgba(0, 0, 0, 0.219),
@@ -39,7 +39,7 @@ export const Content = styled.div`
   @media (max-width: 1024px) {
     margin: 0;
     padding-left: 0;
-    padding-top: 120px;
+    padding-top: 170px;
     width: 100%;
   }
 `

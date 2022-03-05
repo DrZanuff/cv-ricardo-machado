@@ -50,11 +50,18 @@ export function TitleAnimation() {
     {
       src: '/cv_animation.riv',
       onLoad: () => setAnimationReady(true),
-      layout: Layout.new({ fit: Fit.Cover }),
+      layout: new Layout({ fit: Fit.Cover }),
       autoplay: true,
     },
     { fitCanvasToArtboardHeight: true }
   )
+
+  const { RiveComponent: RiveComponentMobile } = useRive({
+    src: '/cv_animation.riv',
+    onLoad: () => setAnimationReady(true),
+    layout: new Layout({ fit: Fit.FitWidth }),
+    autoplay: true,
+  })
 
   return (
     <S.TitleAnimationContainer>
@@ -66,6 +73,11 @@ export function TitleAnimation() {
         <S.AnimationContainer opacity={animationOpacity}>
           <RiveComponent />
         </S.AnimationContainer>
+      )}
+      {animationReady === true && (
+        <S.AnimationContainerMobile opacity={animationOpacity}>
+          <RiveComponentMobile />
+        </S.AnimationContainerMobile>
       )}
       {animationReady === false && (
         <S.SpinnerContainer>
