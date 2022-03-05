@@ -29,7 +29,7 @@ export const menuItems: MenuItensProps[] = [
     href: '#section6',
   },
   {
-    label: 'GOSTOS',
+    label: 'INTERESSES',
     href: '#section7',
   },
   // {

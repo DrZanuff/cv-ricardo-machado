@@ -61,20 +61,26 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     ptBR: /*html*/ `
     <h3>EXPERIÊNCIAS</h3>
 
+    <h4>Agência e-Plus - Desenvolvedor Front-End</h4>
+    <p>
+    Competências: Desenvolvimento de sites eCommerce usando a plataforma Vtex.
+    As principais tecnologias para criar os sites das lojas foram Vanilla JS e/ou
+    Typescript com SASS. Também trabalhei em alguns sites usando ReactJS + Typescript + Gatsby.
+    </p>
+
+    <h4>Redesign do site Chippu</h4>
+    <p>
+    Competências: Fui responsável em implementar um redesign feito no Figma em um site
+    com mais de mil acessos por dia. As tecnologias usadas foram ReactJS + Netx.js,
+    Styled Components para estilização além de Firebase e consumo de API. 
+    </p>
+
     <h4>FAMATEC - Suporte Técnico</h4>
     <p>
     Competências: Primeiro emprego, trabalhei como suporte técnico nesta faculdade.
     Eu prestava suporte para os professores e empregados, como também auxiliava na
     manutenção do CPD. Neste emprego aprendi muito sobre design e PhotoShop,
     pois o Web Designer da empresa me fazia mentoria nos nossos tempos livres.
-    </p>
-
-    <h4>NWI - Suporte Técnico</h4>
-    <p>
-    Competências: A NWI é Telecom de internet via rádio e trabalhei lá como suporte
-    técnico de usuários para os clientes empresariais e de editais. Aprendi muito sobre
-    estrutura de redes e várias tecnologias diferentes, como configuração de equipamento
-    de rádios.
     </p>
 
     <h4>myMac - Autorizada da Apple</h4>
@@ -108,8 +114,6 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
   },
   game: {
     ptBR: /*html*/ `
-    <h3>DESTAQUES</h3>
-
     <h4>COM FOGO NÃO SE BRINCA</h4>
 
     <p>
@@ -159,6 +163,89 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     `,
     enUS: /*html*/ ``,
   },
+  chippu: {
+    ptBR: /*html*/ `
+    <h3>DESTAQUES</h3>
+
+    <h4>Redesign do Site Chippu</h4>
+
+    <p>
+    Site:<br>
+      <a
+      href="https://www.chippu.com.br/"
+      target="_blank">
+        www.chippu.com.br
+      </a>
+    </p>
+
+    <p>
+    Trabalhei liderando uma equipe de dois estagiários para implementar o redesign
+    do site Chippu. Idealizado pelo jornalista e criador de conteúdo Thiago Romariz
+    (ex diretor de conteúdo do site Omelete), o aplicativo Chippu (que significa "dica",
+    em japonês) une algoritmos de inteligência artificial com curadoria humana para dar
+    dicas e sugestões de filmes em plataformas de streaming, como Netflix, GloboPlay,
+    Amazon Prime Video e HBO Go. O site é uma versão web do aplicativo com foco também
+    em notícias, usando um CMS customizado.
+    </p>
+
+    <p>
+    Foi uma experiência muito boa, pois além de liderar uma equipe pequena,
+    usando metodologias ágeis, também foi meu primeiro projeto real usando Next.js.
+    Vale ressaltar que pouco foi aproveitado do site antigo e muitos layout e
+    componentes foram criados do zero. Usamos o design inicial feito no Figma,
+    mas a partir de um ponto tive que criar algumas telas novas usando o próprio Figma.
+    </p>
+
+    <p>
+    Um dos componentes que mais gostei de trabalhar na época foi o componente de Dicas,
+    que exibia todo dia uma recomendação de filme a partir do perfil do usuário .
+    </p>
+
+    <p>
+    Acesse o link abaixo para visualizar o template do componente:<br>
+      <a
+      href="https://www.chippu.com.br/titulos"
+      target="_blank">
+        www.chippu.com.br/titulos
+      </a>
+    </p>
+    `,
+    enUS: /*html*/ ``,
+  },
+
+  quiz: {
+    ptBR: /*html*/ `
+    <h4>Quiz do Witcher</h4>
+
+    <p>
+    Acesse o link abaixo para visualizar o Quiz (*é necessário criar uma conta para fazer o Quiz):<br>
+    <a
+    href="https://www.chippu.com.br/quiz/witcher"
+    target="_blank">
+      www.chippu.com.br/quiz/witcher
+    </a>
+    </p>
+
+    <p>
+      Durante o lançamento da segunda temporada da série Witcher, no Netflix, fui solicitado
+      para criar a interface de um Quiz solicitada pela própria Netflix como peça publicitária
+      a fim de aumentar o interesse na série. O Back-end usado foi o Firebase. Eventualmente
+      esse Quiz foi usado de template para outros Quizzes. A representante da Netflix
+      gostou muito do resultado e o efeito visual foi bem elogiado.  Abaixo você pode acessar
+      a versão estática do Quiz:
+    </p>
+    
+    <p>
+      <a
+      href="https://www.chippu.com.br/quiz/witcher"
+      target="_blank">
+        www.chippu.com.br/quiz/witcher
+      </a>
+    </p>
+    `,
+    enUS: /*html*/ ``,
+  },
+
   gamefication: {
     ptBR: /*html*/ `
     <h4>Sistema de Gamificação da escola Setmind</h4>
@@ -226,13 +313,13 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
   likes: {
     ptBR: /*html*/ `
     <h3>
-      GOSTOS
+      INTERESSES
     </h3><p>
       <ul>
         <li>Basketball</li>
         <li>Board Games</li>
-        <li>Jogar Video Games</li>
-        <li>Desenvolver Video Games</li>
+        <li>Video Games</li>
+        <li>Desenvolvimento de Games</li>
       </ul>
     </p>
     `,
