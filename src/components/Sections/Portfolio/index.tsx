@@ -68,14 +68,14 @@ export function Portfolio({ language }: PortfolioProps) {
       <ul>
         <li>
           <GitHubIcon />
-          <a href="github.com/DrZanuff" target="_blank">
+          <a href="https://www.github.com/DrZanuff" target="_blank">
             github.com/DrZanuff
           </a>
         </li>
 
         <li>
           <ItchIcon />
-          <a href="drzanuff.itch.io/" target="_blank">
+          <a href="https://drzanuff.itch.io/" target="_blank">
             drzanuff.itch.io/
           </a>
         </li>

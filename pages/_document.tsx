@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <title>DrZanuff</title>
           <meta name="CV" content="Ricardo Machado CV" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

@@ -146,7 +146,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     </p>
 
     <p>
-    <a href="drzanuff.itch.io/com-fogo-no-se-brinca" target="_blank">
+    <a href="https://drzanuff.itch.io/com-fogo-no-se-brinca" target="_blank">
       drzanuff.itch.io/com-fogo-no-se-brinca
     </a>
     </p>
@@ -155,7 +155,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     Noticias sobre o jogo:<br>
     
     <a
-    href="www.conass.org.br/aplicativo-vai-orientar-criancas-a-prevenir-queimaduras/"
+    href="https://www.conass.org.br/aplicativo-vai-orientar-criancas-a-prevenir-queimaduras/"
     target="_blank">
     www.conass.org.br/aplicativo-vai-orientar-criancas-a-prevenir-queimaduras/
     </a>
@@ -284,7 +284,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     <p>
     Svelte:<br>
       <a
-      href="github.com/DrZanuff/RankedElo-Setmind-Svelte"
+      href="https://github.com/DrZanuff/RankedElo-Setmind-Svelte"
       target="_blank">
         github.com/DrZanuff/RankedElo-Setmind-Svelte
       </a>
@@ -293,7 +293,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     <p>
     React:<br>
       <a
-      href="github.com/DrZanuff/RankedElo-Setmind-React"
+      href="https://github.com/DrZanuff/RankedElo-Setmind-React"
       target="_blank">
         github.com/DrZanuff/RankedElo-Setmind-React
       </a>
@@ -302,7 +302,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     <p>
     Link da Aplicação:<br>
       <a
-      href="rankedelo-setmind.netlify.app/"
+      href="https://rankedelo-setmind.netlify.app/"
       target="_blank">
         rankedelo-setmind.netlify.app/
       </a>
