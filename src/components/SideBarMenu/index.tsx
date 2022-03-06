@@ -14,33 +14,39 @@ export function SideBarMenu() {
   const control = useAnimation()
   const controlWrapper = useAnimation()
 
-  const toggleMobileMenu = useCallback(async () => {
-    const isOpen = !isMobileMenuOpen
-    setIsMobileMenuOpen(isOpen)
-    if (!isOpen) {
-      await control.start({
-        opacity: 0,
-      })
-      await controlWrapper.start({
-        height: '0px',
-      })
-      control.start({
-        visibility: 'hidden',
-      })
-    } else {
-      await controlWrapper.start({
-        height: '420px',
-        transition: { duration: 0.5 },
-      })
-      control.start({
-        visibility: 'visible',
-        transition: { duration: 0 },
-      })
-      await control.start({
-        opacity: 1,
-      })
-    }
-  }, [isMobileMenuOpen])
+  const toggleMobileMenu = useCallback(
+    async (status = null) => {
+      const isOpen = status == null ? !isMobileMenuOpen : status
+      setIsMobileMenuOpen(isOpen)
+      if (!isOpen) {
+        await control.start({
+          opacity: 0,
+        })
+        await controlWrapper.start({
+          height: '0px',
+        })
+        control.start({
+          visibility: 'hidden',
+        })
+        if (status != null) {
+          window.scrollBy(0, -200)
+        }
+      } else {
+        await controlWrapper.start({
+          height: '420px',
+          transition: { duration: 0.5 },
+        })
+        control.start({
+          visibility: 'visible',
+          transition: { duration: 0 },
+        })
+        await control.start({
+          opacity: 1,
+        })
+      }
+    },
+    [isMobileMenuOpen]
+  )
 
   return (
     <S.SideBarContainer>
@@ -103,6 +109,7 @@ export function SideBarMenu() {
                 active={index === currentItemMenu}
                 onClick={() => {
                   setCurrentItemMenu(index)
+                  toggleMobileMenu(false)
                 }}
               >
                 {item?.label}

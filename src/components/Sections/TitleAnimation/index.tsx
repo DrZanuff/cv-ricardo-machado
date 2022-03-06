@@ -17,6 +17,7 @@ const Titles = [
 
 export function TitleAnimation() {
   const [animationReady, setAnimationReady] = useState(false)
+  const [animationReadyMobile, setAnimationReadyMobile] = useState(false)
   const [animationOpacity, setAnimationOpacity] = useState(0)
 
   const [textIndex, setTextIndex] = useState(0)
@@ -24,6 +25,7 @@ export function TitleAnimation() {
   useEffect(() => {
     setTimeout(() => {
       setAnimationReady(true)
+      setAnimationReadyMobile(true)
 
       setTimeout(() => {
         setAnimationOpacity(1)
@@ -58,7 +60,7 @@ export function TitleAnimation() {
 
   const { RiveComponent: RiveComponentMobile } = useRive({
     src: '/cv_animation.riv',
-    onLoad: () => setAnimationReady(true),
+    onLoad: () => setAnimationReadyMobile(true),
     layout: new Layout({ fit: Fit.FitWidth }),
     autoplay: true,
   })
@@ -69,17 +71,22 @@ export function TitleAnimation() {
       <h2>
         <TextTransition text={Titles[textIndex]} springConfig={presets.stiff} />
       </h2>
+
+      {/* <--Mobile--> */}
+      <h3>{Titles[textIndex]}</h3>
+      {/* <--/Mobile-> */}
+
       {animationReady === true && (
         <S.AnimationContainer opacity={animationOpacity}>
           <RiveComponent />
         </S.AnimationContainer>
       )}
-      {animationReady === true && (
+      {animationReadyMobile === true && (
         <S.AnimationContainerMobile opacity={animationOpacity}>
           <RiveComponentMobile />
         </S.AnimationContainerMobile>
       )}
-      {animationReady === false && (
+      {animationReady === false && animationReadyMobile === false && (
         <S.SpinnerContainer>
           <LoadingSpin
             size={'200px'}

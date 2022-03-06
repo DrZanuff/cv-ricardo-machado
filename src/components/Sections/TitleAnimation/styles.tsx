@@ -26,7 +26,19 @@ export const TitleAnimationContainer = styled.section`
     margin-bottom: 0px;
 
     @media (max-width: 1024px) {
-      font-size: 20px;
+      display: none;
+    }
+  }
+
+  h3 {
+    color: ${({ theme }) => theme.colors.GREEN};
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 0px;
+    display: none;
+
+    @media (max-width: 1024px) {
+      display: block;
     }
   }
 `
@@ -42,6 +54,7 @@ export const AnimationContainer = styled.div<AnimationContainerProps>`
   width: 100%;
   min-height: 518px;
   height: 100%;
+  overflow: hidden;
 
   canvas {
     height: 100%;
@@ -61,10 +74,12 @@ export const AnimationContainerMobile = styled.div<AnimationContainerProps>`
   width: 100%;
   min-height: 300px;
   height: 100%;
+  overflow: hidden;
 
   canvas {
     height: 100%;
     min-height: 300px;
+    width: 100%;
   }
 
   @media (max-width: 1024px) {
