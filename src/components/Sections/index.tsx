@@ -12,7 +12,7 @@ export function Sections() {
     <S.SectionsContainer>
       <TitleAnimation />
       <div id="section1" />
-      <HeaderInfo />
+      <HeaderInfo currentLanguage="ptBR" />
       <Paragraph {...data.intro} currentLanguage="ptBR" />
 
       <div id="section2" />

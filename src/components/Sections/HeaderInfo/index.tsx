@@ -1,30 +1,57 @@
 import { GmailIcon, TwitterIcon, WhatsappIcon } from './icons'
 import * as S from './styles'
 
-export function HeaderInfo() {
+interface HeaderProps {
+  currentLanguage: 'ptBR' | 'enUS'
+}
+
+export function HeaderInfo({ currentLanguage = 'ptBR' }: HeaderProps) {
   return (
     <S.HeaderInfoContainer>
       <S.LeftSide>
-        <h3>SOBRE</h3>
-        <span>{'32 anos   /   Desenvolvedor   /   Designer'}</span>
+        <h3>{currentLanguage == 'ptBR' ? 'SOBRE' : 'ABOUT'}</h3>
+        {currentLanguage == 'ptBR' ? (
+          <span>{'32 anos   /   Desenvolvedor   /   Designer'}</span>
+        ) : (
+          <span>{'32 years   /   Developer   /   Designer'}</span>
+        )}
         <p>
-          Programador Front-End, com experiência nas áreas de Design e
-          Desenvolvimento de Jogos. Gosto de estar sempre aprendendo coisas
-          novas e ser desafiado. Prezo muito por um bom trabalho em equipe, que
-          na minha opinião é o essencial para um ambiente de trabalho.
+          {currentLanguage == 'ptBR'
+            ? `Programador Front-End, com experiência nas áreas de Design e
+            Desenvolvimento de Jogos. Gosto de estar sempre aprendendo coisas
+            novas e ser desafiado. Prezo muito por um bom trabalho em equipe, que
+            na minha opinião é o essencial para um ambiente de trabalho.`
+            : `
+            Front-End Programmer, with experience in Design and in Game Development.
+            I like to be learning new things and being challenged. I really appreciate good
+            teamwork, which in my opinion is essential for a work environment.
+            `}
         </p>
       </S.LeftSide>
       <S.Separator />
       <S.RightSide>
         <S.ListContainer>
-          Pontos Fortes
-          <ul>
-            <li>Bons fundamentos de Javascript</li>
-            <li>Proficiência em Inglês</li>
-            <li>Trabalho em equipe</li>
-          </ul>
+          {currentLanguage == 'ptBR' ? (
+            <>
+              Pontos Fortes
+              <ul>
+                <li>Good Javascript Fundamentals</li>
+                <li>English proficiency</li>
+                <li>Team work</li>
+              </ul>
+            </>
+          ) : (
+            <>
+              Strong points
+              <ul>
+                <li>Bons fundamentos de Javascript</li>
+                <li>Proficiência em Inglês</li>
+                <li>Trabalho em equipe</li>
+              </ul>
+            </>
+          )}
         </S.ListContainer>
-        <h4>CONTATO</h4>
+        <h4>{currentLanguage == 'ptBR' ? 'CONTATO' : 'CONTACT'}</h4>
         <S.LinksContainer>
           <S.LinkItem>
             <WhatsappIcon />
