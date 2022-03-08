@@ -556,7 +556,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
       <ul>
         <li>Complete high school</li>
         <li>Six semesters of Digital Game development</li>
-        <li>Ignite da Rocketseat - Trilha ReactJS <img src="/images/icons/rocket.png" alt="Foguete"> </li>
+        <li>Rocketseat Ignite Bootcamp - ReactJS <img src="/images/icons/rocket.png" alt="Foguete"> </li>
       </ul>
     </p>
     `,
