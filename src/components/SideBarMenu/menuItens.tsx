@@ -37,3 +37,38 @@ export const menuItems: MenuItensProps[] = [
   //   href: '/',
   // },
 ]
+
+export const menuItemsEnUs: MenuItensProps[] = [
+  {
+    label: 'ABOUT',
+    href: '#section1',
+  },
+  {
+    label: 'EXPERIENCES',
+    href: '#section2',
+  },
+  {
+    label: 'PORTFOLIO',
+    href: '#section3',
+  },
+  {
+    label: 'KNOWLEDGES',
+    href: '#section4',
+  },
+  {
+    label: 'GRADUATION',
+    href: '#section5',
+  },
+  {
+    label: 'HIGHLIGHTS',
+    href: '#section6',
+  },
+  {
+    label: 'INTERESTS',
+    href: '#section7',
+  },
+  // {
+  //   label: 'SOBRE ESSE SITE',
+  //   href: '/',
+  // },
+]

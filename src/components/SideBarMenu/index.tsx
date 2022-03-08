@@ -1,7 +1,9 @@
 import { useState, useCallback } from 'react'
 import Image from 'next/image'
 import { useAnimation, motion } from 'framer-motion'
-import { menuItems } from './menuItens'
+import { menuItems, menuItemsEnUs } from './menuItens'
+import { useRecoilState } from 'recoil'
+import { language } from '../../atoms'
 import { CloseMenu, MobileMenuIcon } from './icons'
 import theme from '../../../styles/theme'
 import ProfilePic from '../../../public/images/Photo.png'
@@ -10,6 +12,8 @@ import * as S from './styles'
 export function SideBarMenu() {
   const [currentItemMenu, setCurrentItemMenu] = useState(0)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const [currentLanguage] = useRecoilState(language)
 
   const control = useAnimation()
   const controlWrapper = useAnimation()
@@ -65,22 +69,37 @@ export function SideBarMenu() {
         </S.Badge>
         <S.Title>
           <h1>Ricardo Machado</h1>
-          <span>Desenvolvedor</span>
+          <span>
+            {currentLanguage == 'ptBR' ? 'Desenvolvedor' : 'Developer'}
+          </span>
         </S.Title>
       </S.InfoContainer>
       <S.NavMenu>
-        {menuItems.map((item, index) => (
-          <S.NavItem
-            key={index}
-            href={item.href}
-            active={index === currentItemMenu}
-            onClick={() => {
-              setCurrentItemMenu(index)
-            }}
-          >
-            {item?.label}
-          </S.NavItem>
-        ))}
+        {currentLanguage == 'ptBR'
+          ? menuItems.map((item, index) => (
+              <S.NavItem
+                key={index}
+                href={item.href}
+                active={index === currentItemMenu}
+                onClick={() => {
+                  setCurrentItemMenu(index)
+                }}
+              >
+                {item?.label}
+              </S.NavItem>
+            ))
+          : menuItemsEnUs.map((item, index) => (
+              <S.NavItem
+                key={index}
+                href={item.href}
+                active={index === currentItemMenu}
+                onClick={() => {
+                  setCurrentItemMenu(index)
+                }}
+              >
+                {item?.label}
+              </S.NavItem>
+            ))}
       </S.NavMenu>
 
       <motion.div

@@ -44,9 +44,9 @@ export function HeaderInfo({ currentLanguage = 'ptBR' }: HeaderProps) {
             <>
               Strong points
               <ul>
-                <li>Bons fundamentos de Javascript</li>
-                <li>Proficiência em Inglês</li>
-                <li>Trabalho em equipe</li>
+                <li>Good Javascript Fundamentals</li>
+                <li>English proficiency</li>
+                <li>Team work</li>
               </ul>
             </>
           )}

@@ -139,7 +139,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     </p>
     `,
     enUS: /*html*/ `
-    <h3>EXPERIÊNCIAS</h3>
+    <h3>EXPERIENCES</h3>
 
     <h4>Agência e-Plus - Front-End Developer</h4>
     <p>
@@ -309,7 +309,7 @@ export const data: Record<string | ParagraphKeys, ParagraphProps> = {
     </p>
     `,
     enUS: /*html*/ `
-    <h3>DESTAQUES</h3>
+    <h3>HIGHLIGHTS</h3>
 
     <h4>Chippu website redesign</h4>
 
