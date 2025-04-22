@@ -11,9 +11,9 @@ export function HeaderInfo({ currentLanguage = 'ptBR' }: HeaderProps) {
       <S.LeftSide>
         <h3>{currentLanguage == 'ptBR' ? 'SOBRE' : 'ABOUT'}</h3>
         {currentLanguage == 'ptBR' ? (
-          <span>{'32 anos   /   Desenvolvedor   /   Designer'}</span>
+          <span>{'35 anos   /   Desenvolvedor   /   Designer'}</span>
         ) : (
-          <span>{'32 years   /   Developer   /   Designer'}</span>
+          <span>{'35 years   /   Developer   /   Designer'}</span>
         )}
         <p>
           {currentLanguage == 'ptBR'

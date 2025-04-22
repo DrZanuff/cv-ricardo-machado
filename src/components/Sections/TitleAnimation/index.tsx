@@ -1,4 +1,4 @@
-import { Fit, Layout, useRive } from 'rive-react'
+import { Fit, Layout, useRive } from '@rive-app/react-canvas-lite'
 import LoadingSpin from 'react-loading-spin'
 import { useState, useEffect } from 'react'
 import theme from '../../../../styles/theme'
