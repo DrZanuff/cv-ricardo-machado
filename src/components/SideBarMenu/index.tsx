@@ -59,7 +59,9 @@ export function SideBarMenu() {
       </S.IconContainer>
       <S.InfoContainer>
         <S.Badge>
-          <Image src={ProfilePic} width={'100%'} height={'100%'} />
+          <div style={{ width: '100%', height: '100%' }}>
+            <Image src={ProfilePic} width={100} height={100} alt="profile" />
+          </div>
           <S.Dot>
             <S.Circle />
           </S.Dot>
@@ -83,8 +85,7 @@ export function SideBarMenu() {
                 active={index === currentItemMenu}
                 onClick={() => {
                   setCurrentItemMenu(index)
-                }}
-              >
+                }}>
                 {item?.label}
               </S.NavItem>
             ))
@@ -95,8 +96,7 @@ export function SideBarMenu() {
                 active={index === currentItemMenu}
                 onClick={() => {
                   setCurrentItemMenu(index)
-                }}
-              >
+                }}>
                 {item?.label}
               </S.NavItem>
             ))}
@@ -109,8 +109,7 @@ export function SideBarMenu() {
           height: 0,
           width: '100vw',
           backgroundColor: theme.colors.GRAY_MENU,
-        }}
-      >
+        }}>
         <motion.div
           id="animate-div"
           animate={control}
@@ -118,8 +117,7 @@ export function SideBarMenu() {
             visibility: 'hidden',
             opacity: 0,
             width: '100vw',
-          }}
-        >
+          }}>
           <S.NaveMenuMobile>
             {menuItems.map((item, index) => (
               <S.NavItem
@@ -129,8 +127,7 @@ export function SideBarMenu() {
                 onClick={() => {
                   setCurrentItemMenu(index)
                   toggleMobileMenu(false)
-                }}
-              >
+                }}>
                 {item?.label}
               </S.NavItem>
             ))}

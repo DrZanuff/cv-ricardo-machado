@@ -76,6 +76,11 @@ export const Badge = styled.div`
   border: 2px solid ${({ theme }) => theme.colors.GREEN};
   position: relative;
 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
   @media (max-width: 1024px) {
     width: 90px;
     height: 90px;
